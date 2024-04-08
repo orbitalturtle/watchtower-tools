@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tonic = "0.1"
-
-[build-dependencies]
-tonic-build = "0.11"
+plugin = { git = "https://github.com/talaia-labs/rust-teos", package = "watchtower-plugin" }
+simple_logger = "4.3.3"
+teos-common = { git = "https://github.com/talaia-labs/rust-teos", package = "teos-common" }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
