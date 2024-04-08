@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+bitcoin = { version = "0.28.0", features = ["rand"] }
 plugin = { git = "https://github.com/talaia-labs/rust-teos", package = "watchtower-plugin" }
 simple_logger = "4.3.3"
 teos-common = { git = "https://github.com/talaia-labs/rust-teos", package = "teos-common" }
